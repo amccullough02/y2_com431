@@ -1,0 +1,61 @@
+Initial set up installing breeze, debugbar and initial migration.
+
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
+sail + npm commands list:
+
+sail artisan migrate
+sail npm run dev
+sail composer require barryvdh/laravel-debugbar --dev
+sail composer require laravel/breeze --dev
+sail artisan breeze:install
+
+sail artisan show:model User
+sail artisan make:model Post -m
+sail artisan migrate (for the model to preview in tableplus)
+sail aritsan migrate:rollback
+sail artisan make:controller PostsController --resource
+sail artisan route:list
+sail artisan make:factory PostFactory
+sail artisan make:seeder PostSeeder
+sail artisan migrate:refresh
+sail artisan make:migration add_soft_deletes_to_posts
+sail artisan make:controller TrashedPostController
+sail artisan make:migration add_role_column_to_users_table
+sail artisan make:seeder UserSeederUpdateRole
+sail artisan db:seed --class=UserSeederUpdateRole
+sail artisan make:model Comment -m
+sail artisan make:migration Comment_Post
+sail artisan make:factory CommentFactory
+sail artisan make:seeder CommentSeeder
+sail artisan make:controller CommentController
+sail artisan storage:link
+sail composer require coderflexx/laravisit
+sail artisan make:migration create_laravisits_table
+sail artisan make:seeder UserSeeder
+
+todo:
+Seed comments and get them to display properly.
+Allow logged in users to leave comments and delete their own.
+Testing.
+
+planned:
+
+bugs/issues:
+delete files don't disappear from storage/app/public/uploads
+security vulnerability guzzlehttp/psr7
+non-authenticated users should be able to view the gallery
+
+planned tests:
+- login redirects to posts?
+- admin gate test (can test user #1 access the create.blade menu?)
+- alex account test (can alex create a post, despite being only a user?)
+- paginated posts show most recently updated item?
+- admin account exists
+- are there three user accounts
+- are there eight posts?
+
+test_artisan_commands:
+sail artisan make:test PostViewTest (paginated, redirect)
+sail artisan make:test AuthTest (admin, alex)
+sail artisan make:test IntegrityTest (admin acc, user accs, eight posts)

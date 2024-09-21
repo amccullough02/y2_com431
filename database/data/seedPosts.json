@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "title": "Getting Ready to Go Home",
+        "image_path": "http://localhost/storage/uploads/alex1.jpg",
+        "cost": 10,
+        "created_at": "2023-04-24 12:00:00",
+        "updated_at": "2023-04-24 12:30:00"
+    },
+    {
+        "id": 2,
+        "title": "Sitting in a Private Study Room",
+        "image_path": "http://localhost/storage/uploads/alex2.jpg",
+        "cost": 100,
+        "created_at": "2023-04-24 13:00:00",
+        "updated_at": "2023-04-24 13:30:00"
+    },
+    {
+        "id": 3,
+        "title": "In a Lab",
+        "image_path": "http://localhost/storage/uploads/alex3.jpg",
+        "cost": 5,
+        "created_at": "2023-04-24 14:00:00",
+        "updated_at": "2023-04-24 14:30:00"
+    },
+    {
+        "id": 4,
+        "title": "Moving Between Classses",
+        "image_path": "http://localhost/storage/uploads/alex4.jpg",
+        "cost": 16,
+        "created_at": "2023-04-24 15:00:00",
+        "updated_at": "2023-04-24 15:30:00"
+    },
+    {
+        "id": 5,
+        "title": "About to Give a Talk",
+        "image_path": "http://localhost/storage/uploads/alex5.jpg",
+        "cost": 22,
+        "created_at": "2023-04-24 16:00:00",
+        "updated_at": "2023-04-24 16:30:00"
+    },
+    {
+        "id": 6,
+        "title": "During a Teams Meeting",
+        "image_path": "http://localhost/storage/uploads/alex6.jpg",
+        "cost": 45,
+        "created_at": "2023-04-24 17:00:00",
+        "updated_at": "2023-04-24 17:30:00"
+    },
+    {
+        "id": 7,
+        "title": "At Lunch",
+        "image_path": "http://localhost/storage/uploads/alex7.jpg",
+        "cost": 30,
+        "created_at": "2023-04-24 18:00:00",
+        "updated_at": "2023-04-24 18:30:00"
+    },
+    {
+        "id": 8,
+        "title": "In a COM431 Lecture!",
+        "image_path": "http://localhost/storage/uploads/alex8.jpg",
+        "cost": 15,
+        "created_at": "2023-04-24 19:00:00",
+        "updated_at": "2023-04-24 19:30:00"
+    }
+
+]
